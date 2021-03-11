@@ -1,5 +1,5 @@
 exports.min = function min (array) {
-    if (array.length > 0 && Array.isArray(array)) {
+    if (Array.isArray(array) && array.length > 0) {
         return Math.min.apply(null, array);
     }
     else {
@@ -8,7 +8,7 @@ exports.min = function min (array) {
 }
 
 exports.max = function max (array) {
-    if (array.length > 0 && Array.isArray(array)) {
+    if (Array.isArray(array) && array.length > 0) {
         return Math.max.apply(null, array);
     }
     else {
@@ -17,7 +17,7 @@ exports.max = function max (array) {
 }
 
 exports.avg = function avg (array) {
-    if (array.length > 0 && Array.isArray(array)) {
+    if (Array.isArray(array) && array.length > 0) {
         return array.reduce((a, b) => a + b, 0) / array.length;
     }
     else {
