@@ -1,4 +1,3 @@
-
 exports.min = function min (array) {
     if (array.length > 0 && Array.isArray(array)) {
         return Math.min.apply(null, array);
