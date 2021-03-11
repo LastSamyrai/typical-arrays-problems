@@ -19,7 +19,7 @@ exports.max = function max (array) {
 
 exports.avg = function avg (array) {
     if (array.length > 0 && Array.isArray(array)) {
-        return array.reduce((a, b) => (a + b)) / array.length;
+        return array.reduce((a, b) => a + b, 0) / array.length;
     }
     else {
         return 0;
